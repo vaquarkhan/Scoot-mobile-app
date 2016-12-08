@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="daily">
+        <item quantity="other">每 %d 天</item>
+        <item quantity="one">日常</item>
+    </plurals>
+    <plurals name="endByCount">
+        <item quantity="other">; 执行 %d 次</item>
+        <item quantity="one">; 一次</item>
+    </plurals>
+    <plurals name="recurrence_end_count">
+        <item quantity="other">执行 %d 次</item>
+        <item quantity="one">执行 %d 次</item>
+    </plurals>
+    <plurals name="recurrence_interval_daily">
+        <item quantity="other">每 %d 天</item>
+        <item quantity="one">每 %d 天</item>
+    </plurals>
+    <plurals name="recurrence_interval_monthly">
+        <item quantity="other">每 %d 月</item>
+        <item quantity="one">每 %d 月</item>
+    </plurals>
+    <plurals name="recurrence_interval_weekly">
+        <item quantity="other">每 %d 周</item>
+        <item quantity="one">每 %d 周</item>
+    </plurals>
+    <plurals name="recurrence_interval_yearly">
+        <item quantity="other">每 %d 年</item>
+        <item quantity="one">每 %d 年</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">每 %1$d 周的 %2$s</item>
+        <item quantity="one">每周的 %2$s</item>
+    </plurals>
+</resources>

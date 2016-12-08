@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rlTopBar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/sourceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_pickup" android:layout_marginEnd="10.0dip" />
+        <android.support.v7.widget.AppCompatAutoCompleteTextView android:textSize="18.0sp" android:textColor="@color/location_text" android:textColorHint="@color/grey" android:ellipsize="end" android:id="@id/etv_places" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Source City" android:maxLines="1" android:lines="1" android:ems="10" android:singleLine="true" android:selectAllOnFocus="true" android:imeOptions="actionNext" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/itienary_details_coontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:weightSum="1.0" android:divider="@drawable/horizontal_divider" android:layout_below="@id/rlTopBar" android:layout_alignParentLeft="true" android:showDividers="end|middle|beginning" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/date_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/vertical_divider" android:layout_weight="0.5" android:showDividers="middle">
+            <LinearLayout android:orientation="horizontal" android:id="@id/date_container_sub1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <ImageView android:id="@id/date_imageView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_action_event" android:layout_marginStart="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/pickup_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip">
+                    <android.support.v7.widget.AppCompatTextView android:textColor="@color/grey" android:id="@id/pick_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Depart" />
+                    <android.support.v7.widget.AppCompatEditText android:textSize="18.0sp" android:id="@id/pickup_date" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:hint="Pick a Date" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/date_container_sub2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <ImageView android:id="@id/time_imageView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_action_alarm" android:layout_marginStart="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/return_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip">
+                    <TextView android:textColor="@color/grey" android:id="@id/pickup_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Pick Up Time" />
+                    <android.support.v7.widget.AppCompatEditText android:textSize="18.0sp" android:id="@id/pickup_time" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:hint="Select Time" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/days_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_weight="0.5">
+            <ImageView android:id="@id/clock_imageView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_action_query_builder" android:layout_marginStart="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/days_container_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip">
+                <TextView android:textColor="@color/grey" android:id="@id/num_days_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Number of Days" />
+                <android.support.v7.widget.AppCompatEditText android:textSize="18.0sp" android:id="@id/num_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="1" android:singleLine="true" android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/local_radiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:baselineAligned="false" android:layout_below="@id/itienary_details_coontainer" android:layout_marginStart="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <RadioButton android:textColor="@color/grey" android:id="@id/option_fullday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full Day" />
+            <TextView android:textColor="@color/grey" android:id="@id/label8hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="2.0dip" android:text="(8 hours)" android:layout_marginStart="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <RadioButton android:textColor="@color/grey" android:id="@id/option_halfday" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="Half Day" android:layout_weight="0.5" />
+            <TextView android:textColor="@color/grey" android:id="@id/label4hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="(4 hours)" android:layout_marginStart="30.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/find_cars" android:background="@color/floating_label_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Find Cars" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textStyle="bold" android:id="@id/offer_status_text_view_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter your offer details" android:layout_centerHorizontal="true" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/offer_status_text_view_header">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:enabled="false" android:id="@id/edit_text_offer_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="offer key" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="Offer Amount" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="CC" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_bank_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="CC" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="Valid Card Number" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_name_on_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="Name of card" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text=" " android:hint="Phone number" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+                <EditText android:id="@id/edit_text_offer_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text=" " android:hint="Email" android:singleLine="true" android:imeOptions="flagNoExtractUi" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

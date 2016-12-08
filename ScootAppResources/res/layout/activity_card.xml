@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/gradient_end" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Amount Payable" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/amount_payable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="Rs. 18000" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Debit / Credit Card" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_layout_root_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/header_container">
+            <TextView android:textColor="#ffff0000" android:gravity="center" android:layout_gravity="center" android:id="@id/text_view_issuer_down" android:background="@drawable/error_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            <android.support.v7.widget.AppCompatEditText android:id="@id/edit_text_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="Number on Card" android:singleLine="true" android:maxLength="19" android:drawableLeft="@drawable/ic_card" android:drawablePadding="5.0dip" android:inputType="number" android:imeOptions="actionNone" android:drawableStart="@drawable/ic_card" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/edit_text_expiry_month" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="MM" android:singleLine="true" android:maxLength="2" android:layout_weight="5.0" android:inputType="number" />
+                <android.support.v7.widget.AppCompatEditText android:id="@id/edit_text_expiry_year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="YYYY" android:singleLine="true" android:maxLength="4" android:layout_weight="5.0" android:inputType="number" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatEditText android:id="@id/edit_text_card_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="CVV" android:singleLine="true" android:maxLength="4" android:inputType="numberPassword" />
+            <android.support.v7.widget.AppCompatEditText android:id="@id/edit_text_name_on_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:hint="Name on Card" android:singleLine="true" android:inputType="text" />
+            <CheckBox android:id="@id/check_box_save_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:checked="true" android:text="Store card" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_layout_have_cvv_expiry" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/text_view_have_click_here" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_here" />
+                <TextView android:id="@id/text_view_have_cvv_and_expiry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/if_cvv_and_expiry_on_card" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_layout_dont_have_cvv_expiry" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/text_view_dont_have_click_here" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_here" />
+                <TextView android:id="@id/text_view_dont_have_cvv_and_expiry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/if_dont_cvv_and_expiry_on_card" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/button_card_make_payment" android:background="@color/gradient_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pay Now" android:layout_below="@id/linear_layout_root_detail" />
+        <include android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/footer_image" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+        <RelativeLayout android:id="@id/olaSignupForm" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/olaSignupWebView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/forgot_password" android:gravity="center_horizontal" android:id="@id/forgotPassword" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/forgot_password" android:layout_below="@id/olaSignupWebView" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

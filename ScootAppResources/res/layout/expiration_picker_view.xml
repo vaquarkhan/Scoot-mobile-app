@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.codetroopers.betterpickers.expirationpicker.ExpirationView android:gravity="top" android:layout_gravity="center" android:id="@id/date_text" android:paddingLeft="@dimen/timer_padding_left" android:paddingTop="@dimen/medium_font_padding" android:paddingBottom="@dimen/medium_font_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="2.0">
+            <com.codetroopers.betterpickers.widget.ZeroTopPaddingTextView android:ellipsize="none" android:id="@id/month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/medium_light_expiration" />
+            <com.codetroopers.betterpickers.widget.ZeroTopPaddingTextView android:ellipsize="none" android:id="@id/expiration_seperator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expiration_picker_seperator" android:singleLine="true" style="@style/medium_light_expiration" />
+            <com.codetroopers.betterpickers.widget.ZeroTopPaddingTextView android:ellipsize="none" android:gravity="top" android:id="@id/year_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/medium_light_expiration" />
+        </com.codetroopers.betterpickers.expirationpicker.ExpirationView>
+        <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/delete" android:background="@drawable/key_background_dark" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_backspace_dark" android:layout_weight="1.0" android:contentDescription="@string/number_delete" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/default_divider_color_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.codetroopers.betterpickers.widget.UnderlinePageIndicatorPicker android:id="@id/keyboard_indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/keyboard_pager" android:layout_width="fill_parent" android:layout_height="@dimen/date_viewpager_height" />
+</LinearLayout>

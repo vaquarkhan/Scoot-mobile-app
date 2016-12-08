@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="recurrence_freq">
+        <item>按天重复</item>
+        <item>按星期重复</item>
+        <item>按月份重复</item>
+        <item>按年份重复</item>
+    </string-array>
+    <string-array name="repeat_by_nth_fri">
+        <item>每月第一个周五</item>
+        <item>每月第二个周五</item>
+        <item>每月第三个周五</item>
+        <item>每月第四个周五</item>
+        <item>每月最后一个周五</item>
+    </string-array>
+    <string-array name="repeat_by_nth_mon">
+        <item>每月第一个周一</item>
+        <item>每月第二个周一</item>
+        <item>每月第三个周一</item>
+        <item>每月第四个周一</item>
+        <item>每月最后一个周一</item>
+    </string-array>
+    <string-array name="repeat_by_nth_sat">
+        <item>每月第一个周六</item>
+        <item>每月第二个周六</item>
+        <item>每月第三个周六</item>
+        <item>每月第四个周六</item>
+        <item>每月最后一个周六</item>
+    </string-array>
+    <string-array name="repeat_by_nth_sun">
+        <item>每月第一个周末</item>
+        <item>每月第二个周末</item>
+        <item>每月第三个周末</item>
+        <item>每月第四个周末</item>
+        <item>每月最后一个周末</item>
+    </string-array>
+    <string-array name="repeat_by_nth_thurs">
+        <item>每月第一个周四</item>
+        <item>每月第二个周四</item>
+        <item>每月第三个周四</item>
+        <item>每月第四个周四</item>
+        <item>每月最后一个周四</item>
+    </string-array>
+    <string-array name="repeat_by_nth_tues">
+        <item>每月第一个周二</item>
+        <item>每月第二个周二</item>
+        <item>每月第三个周二</item>
+        <item>每月第四个周二</item>
+        <item>每月最后一个周二</item>
+    </string-array>
+    <string-array name="repeat_by_nth_wed">
+        <item>每月第一个周三</item>
+        <item>每月第二个周三</item>
+        <item>每月第三个周三</item>
+        <item>每月第四个周三</item>
+        <item>每月最后一个周三</item>
+    </string-array>
+</resources>

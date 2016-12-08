@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/login_bg_full" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scootlogosignup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/side_menu_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.AppCompatEditText android:id="@id/emailid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:hint="email" android:ems="10" android:drawableLeft="@drawable/user" android:layout_below="@id/scootlogosignup" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:inputType="textEmailAddress" android:drawableStart="@drawable/user">
+        <requestFocus android:layout_width="wrap_content" />
+    </android.support.v7.widget.AppCompatEditText>
+    <android.support.v7.widget.AppCompatEditText android:id="@id/lastname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:hint="Last Name" android:ems="10" android:layout_toRightOf="@id/scootlogosignup" android:layout_alignBottom="@id/firstname" />
+    <android.support.v7.widget.AppCompatEditText android:id="@id/firstname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="First Name" android:ems="10" android:layout_toLeftOf="@id/scootlogosignup" android:layout_below="@id/emailid" android:layout_alignLeft="@id/emailid" />
+    <com.digits.sdk.android.DigitsAuthButton android:id="@id/auth_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/lastname" android:layout_alignLeft="@id/firstname" android:layout_alignRight="@id/emailid" />
+    <TextView android:textColor="@color/login_button_color" android:gravity="center_horizontal" android:id="@id/scoot_tnc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="By signing up you agree to Scoot's Terms and Conditions" android:layout_below="@id/auth_button" android:layout_alignLeft="@id/auth_button" android:layout_alignRight="@id/auth_button" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/gradient_end" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Amount Payable" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/amount_payable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="Rs. 18000" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Select Bank" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bank_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/header_container">
+            <TextView android:textColor="@android:color/darker_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bank_icon_margin" android:text="POPULAR BANKS" />
+            <GridLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/popularBankGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:rowCount="2" android:columnCount="3" android:alignmentMode="alignBounds">
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankSBI" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_sbi" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankCanara" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_canara" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankAxis" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_axis" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankYes" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_yes" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankHDFC" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_hdfc" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bank_grid_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bank_icon_margin">
+                    <ImageView android:id="@id/bankOfIndia" android:background="@android:color/white" android:padding="@dimen/bank_icon_margin" android:layout_width="@dimen/bank_icon_size" android:layout_height="@dimen/bank_icon_size" android:layout_margin="@dimen/bank_icon_padding" android:src="@drawable/bank_boi" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+            </GridLayout>
+            <Spinner android:id="@id/spinner_netbanking" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/button_pay_now" android:background="@color/gradient_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PAY NOW" android:layout_below="@id/bank_container" />
+        <include android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/footer_image" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

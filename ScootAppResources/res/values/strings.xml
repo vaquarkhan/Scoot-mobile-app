@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_send_button_text">Send</string>
+    <string name="com_facebook_share_button_text">Share</string>
+    <string name="com_facebook_tooltip_default">"New! You're in control - choose what info you want to share with apps."</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">"%1$s won't run without Google Play services, which are missing from your phone."</string>
+    <string name="common_google_play_services_install_text_tablet">"%1$s won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_resolution_required_text">Please complete action required by %1$s.</string>
+    <string name="common_google_play_services_resolution_required_title">Google Play services requires an action</string>
+    <string name="common_google_play_services_restricted_profile_text">Accessing accounts from a restricted profile is not supported.</string>
+    <string name="common_google_play_services_restricted_profile_title">Restricted Profile</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="joda_time_android_date_time">%1$s, %2$s</string>
+    <string name="joda_time_android_preposition_for_date">on %s</string>
+    <string name="joda_time_android_preposition_for_time">at %s</string>
+    <string name="joda_time_android_relative_time">%1$s, %2$s</string>
+    <string name="messenger_send_button_text">Send</string>
+    <string name="place_autocomplete_clear_button">Clear search</string>
+    <string name="place_autocomplete_search_hint">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="dgts__call_me">Call me</string>
+    <string name="dgts__calling">Calling…</string>
+    <string name="dgts__confirmation_code">Confirmation code</string>
+    <string name="dgts__confirmation_edit_hint">Enter the 6-digit code we sent you</string>
+    <string name="dgts__confirmation_error">Unable to confirm your phone number</string>
+    <string name="dgts__confirmation_error_alternative">Sorry, we are having trouble sending you a confirmation code.</string>
+    <string name="dgts__confirmation_expired">This code has expired. Please resend confirmation code.</string>
+    <string name="dgts__continue">Continue</string>
+    <string name="dgts__create_account">Create account</string>
+    <string name="dgts__digits_logo_desc">digits logo icon</string>
+    <string name="dgts__digits_logo_name_desc">digits logo name</string>
+    <string name="dgts__dismiss">Dismiss</string>
+    <string name="dgts__done">Done</string>
+    <string name="dgts__email_request_edit_hint">Email address</string>
+    <string name="dgts__email_request_title">Enter email address</string>
+    <string name="dgts__find_your_friends">Find your friends</string>
+    <string name="dgts__image_header_description">Image header for login</string>
+    <string name="dgts__invalid_email">Invalid Email. Try Again</string>
+    <string name="dgts__login_digits_text">Use my phone number</string>
+    <string name="dgts__network_error">Please check your network and try again.</string>
+    <string name="dgts__not_now">Not now</string>
+    <string name="dgts__okay">Okay</string>
+    <string name="dgts__phone_number_edit_hint">Your Number</string>
+    <string name="dgts__phone_number_text">Enter your phone number</string>
+    <string name="dgts__pin_code_verification_title">Enter 2-step verification code</string>
+    <string name="dgts__resend_confirmation_button_code">Resend code</string>
+    <string name="dgts__resend_confirmation_text">Resend confirmation code</string>
+    <string name="dgts__send_confirmation_code">Send confirmation code</string>
+    <string name="dgts__sending">Sending…</string>
+    <string name="dgts__success_desc">Success Icon</string>
+    <string name="dgts__terms_email_request">By tapping %1$sContinue%1$s above, you are adding this email to your Digits account. You agree that this app and %7$sall apps listed in your Digits account%5$s can access this email address and their users can discover you by email.</string>
+    <string name="dgts__terms_text">By tapping %1$sSend confirmation code%1$s above, %6$sDigits by Twitter%5$s will send you an SMS to confirm your phone number. On the next screen, you can choose “Resend code” to receive a new SMS or “Call me” to initiate a phone call to confirm your phone number. Message, call &amp; data rates may apply.</string>
+    <string name="dgts__terms_text_call_me">By tapping %1$sCall me%1$s above, %6$sDigits by Twitter%5$s will send you a voice call to confirm your phone number. Call &amp; data rates may apply.</string>
+    <string name="dgts__terms_text_create">By tapping %1$sCreate account%1$s above, you agree to the %8$sTerms of Service%5$s, %9$sPrivacy Policy%5$s, and %10$sCookies Use%5$s of %6$sDigits by Twitter%5$s, to share your phone number with %4$s, and that other users of %4$s can discover you by phone number.</string>
+    <string name="dgts__terms_text_sign_in">By tapping %1$sContinue%1$s above, your %7$sDigits phone number and/or email address%5$s will be shared with %4$s and other users of %4$s can discover you by phone number and/or email.</string>
+    <string name="dgts__terms_text_updated">By tapping %1$sContinue%1$s above, you agree to the %8$sTerms of Service%5$s, %9$sPrivacy Policy%5$s, and %10$sCookies Use%5$s of %6$sDigits by Twitter%5$s, to share your %7$sDigits phone number and/or email address%5$s with %4$s, and other users of %4$s can discover you by phone number and/or email.</string>
+    <string name="dgts__try_again">Try Again</string>
+    <string name="dgts__try_again_confirmation">Please check your code and try again.</string>
+    <string name="dgts__try_again_email">Please check your email and try again</string>
+    <string name="dgts__try_again_phone_number">Please check your number and try again.</string>
+    <string name="dgts__try_another_phone">Try a different phone number</string>
+    <string name="dgts__unsupported_operator_error">Unable to send this number an SMS message.</string>
+    <string name="dgts__upload_contacts">"We use Digits by Twitter to find more of your friends who use this app. When you tap Okay, we'll upload your address book to Digits by Twitter so that we can help you find users of %1$s that you know or help other users of %1$s find you."</string>
+    <string name="dgts__verification_code">Verification code</string>
+    <string name="dgts_pin_code_terms">You have previously set a 2-step verification code on digits.com</string>
+    <string name="tw__allow_btn_txt">Allow</string>
+    <string name="tw__login_btn_txt">Log in with Twitter</string>
+    <string name="tw__not_now_btn_txt">Not now</string>
+    <string name="tw__share_email_desc">Allow %1$s to access the email address associated with your Twitter account @%2$s so that %1$s can use it according to its privacy policy. For example, %1$s could send you updates and other information at that address.</string>
+    <string name="tw__share_email_title">Share your email address</string>
+    <string name="acessibility_recurrence_choose_end_date_description">change end date</string>
+    <string name="day_c">DAY</string>
+    <string name="day_of_week_label_typeface">sans-serif</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="deleted_key">%1$s deleted</string>
+    <string name="done_label">Done</string>
+    <string name="endByDate">; until %s</string>
+    <string name="every_weekday">Every weekday (Mon–Fri)</string>
+    <string name="expiration_picker_seperator">/</string>
+    <string name="hint_time_zone_search">Type country name</string>
+    <string name="hms_picker_hours_label">H</string>
+    <string name="hms_picker_minutes_label">M</string>
+    <string name="hms_picker_seconds_label">S</string>
+    <string name="hour_picker_description">Hours circular slider</string>
+    <string name="hours_label">h</string>
+    <string name="hours_label_description">hours</string>
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="max_error">Please input a number less than or equal to %1$d</string>
+    <string name="min_error">Please input a number greater than or equal to %1$d</string>
+    <string name="min_max_error">Please input a number between %1$d and %2$d</string>
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="minutes_label">m</string>
+    <string name="minutes_label_description">minutes</string>
+    <string name="month_c">MONTH</string>
+    <string name="monthly">Monthly</string>
+    <string name="no_results_found">No results found</string>
+    <string name="number_delete">Delete</string>
+    <string name="number_picker_minus_label">—</string>
+    <string name="number_picker_plus_minus">+/-</string>
+    <string name="number_picker_seperator">.</string>
+    <string name="palestine_display_name">Palestine</string>
+    <string name="picker_cancel">Cancel</string>
+    <string name="picker_set">OK</string>
+    <string name="radial_numbers_typeface">sans-serif</string>
+    <string name="recurrence_end_continously">Forever</string>
+    <string name="recurrence_end_count_label">For a number of events</string>
+    <string name="recurrence_end_date">Until %s</string>
+    <string name="recurrence_end_date_label">Until a date</string>
+    <string name="recurrence_month_pattern_by_day">on the same day each month</string>
+    <string name="sans_serif">sans-serif</string>
+    <string name="save_label">Done</string>
+    <string name="searchview_description_clear">Clear query</string>
+    <string name="seconds_label">s</string>
+    <string name="seconds_label_description">seconds</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="select_year">Select year</string>
+    <string name="time_picker_00_label">:00</string>
+    <string name="time_picker_30_label">:30</string>
+    <string name="time_picker_ampm_label">--</string>
+    <string name="time_picker_time_seperator">:</string>
+    <string name="time_placeholder">--</string>
+    <string name="time_separator">:</string>
+    <string name="timer_delete">Delete</string>
+    <string name="year_c">YEAR</string>
+    <string name="year_picker_description">Year list</string>
+    <string name="yearly_plain">Yearly</string>
+    <string name="switch_off">OFF</string>
+    <string name="switch_on">ON</string>
+    <string name="com_mixpanel_android_close">Close</string>
+    <string name="com_mixpanel_android_done">Done</string>
+    <string name="com_mixpanel_android_exit">Exit</string>
+    <string name="com_mixpanel_android_logo">By Mixpanel</string>
+    <string name="com_mixpanel_android_next">Next question</string>
+    <string name="com_mixpanel_android_no_thanks">No, Thanks</string>
+    <string name="com_mixpanel_android_notification_image">Image not displayed</string>
+    <string name="com_mixpanel_android_previous">Previous question</string>
+    <string name="com_mixpanel_android_sure">Sure</string>
+    <string name="com_mixpanel_android_survey_prompt_dialog_message">Mind taking a quick survey?</string>
+    <string name="com_mixpanel_android_survey_prompt_dialog_title">"We'd love your feedback!"</string>
+    <string name="MR_Error_text">Something Bad Happened!</string>
+    <string name="MR_Tap_retry_text">Tap to Retry</string>
+    <string name="action_demo">Demo</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_next">Next</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_book_cab">Book Cab</string>
+    <string name="activity_booking_confirmation">Cab Booked</string>
+    <string name="activity_booking_history">Ride History</string>
+    <string name="activity_credit_debit_card">Enter Card Details</string>
+    <string name="activity_my_accounts">My Accounts</string>
+    <string name="activity_net_banking">Net Banking</string>
+    <string name="activity_offers">Offers</string>
+    <string name="activity_ola_booking">Confirm Booking</string>
+    <string name="activity_ola_signup">Ola Signup</string>
+    <string name="activity_payments">Payments</string>
+    <string name="activity_stored_card">Saved Cards</string>
+    <item type="string" name="ampm_circle_radius_multiplier">0.19</item>
+    <string name="app_name">Scoot</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="back">Back</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="call_location_rationale">Call Permission is needed for Call Driver feature.</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancellation_policy">"1. 24 hours prior to the pick up time: 20% of total ride cost
+2. Within 24 hours of the pick up time : No Refund
+* Refund will be transferred directly to the customer's bank account. No Cash Refunds will be made."</string>
+    <string name="cancellation_reason_title">Tell us why</string>
+    <string name="cb_approve_otp">Approve</string>
+    <string name="cb_authenticate_with">Select an option for Faster Payment</string>
+    <string name="cb_b_cancel">Cancel</string>
+    <string name="cb_bank_logo">Bank LOGO</string>
+    <string name="cb_bank_page_loading">Please wait. Bank page is loading..</string>
+    <string name="cb_btn_action">btn_action</string>
+    <string name="cb_card_not_registered_with_pin">Your card has not been registered for PIN yet. Do you want to continue with PIN?</string>
+    <string name="cb_choose">choose</string>
+    <string name="cb_detect_bank">detectBank</string>
+    <string name="cb_detect_otp">detectOtp</string>
+    <string name="cb_enter_manually">Enter Manually</string>
+    <string name="cb_enter_otp">enterOTP</string>
+    <string name="cb_enter_otp_c">Enter OTP</string>
+    <string name="cb_enter_pin">enterPIN</string>
+    <string name="cb_error">error</string>
+    <string name="cb_error_title">ERROR_TITLE</string>
+    <string name="cb_find_otp">findOtp</string>
+    <string name="cb_incorrect_OTP_2">incorrectOTP</string>
+    <string name="cb_incorrect_otp_e">Incorrect OTP!</string>
+    <string name="cb_incorrect_password">Incorrect Password</string>
+    <string name="cb_incorrect_pin">incorrectPIN</string>
+    <string name="cb_init">init</string>
+    <string name="cb_nb_image">net banking image</string>
+    <string name="cb_no_internet">NO INTERNET CONNECTIVITY</string>
+    <string name="cb_otp">otp</string>
+    <string name="cb_otp_received">OTP Received</string>
+    <string name="cb_password">PASSWORD</string>
+    <string name="cb_password_value">Password</string>
+    <string name="cb_payu_icon">PayU icon</string>
+    <string name="cb_payu_response">payu_response</string>
+    <string name="cb_pin">pin</string>
+    <string name="cb_please_wait">Please Wait</string>
+    <string name="cb_populate_user_id">populate_user_id</string>
+    <string name="cb_powered_by">Powered by</string>
+    <string name="cb_process_otp">process_otp</string>
+    <string name="cb_process_request">Processing Your Request</string>
+    <string name="cb_regen_otp">regenerate_otp</string>
+    <string name="cb_regenerate">regenerate</string>
+    <string name="cb_regenerate_otp">Regenerate OTP</string>
+    <string name="cb_regenerate_otp_text">It is taking long.You may…</string>
+    <string name="cb_register">register</string>
+    <string name="cb_register_for_pin">REGISTER FOR PIN</string>
+    <string name="cb_register_option">registerOption</string>
+    <string name="cb_registeration_detail">Enter your registration details</string>
+    <string name="cb_remember_user">Remember User ID</string>
+    <string name="cb_result">result</string>
+    <string name="cb_retry">retry...</string>
+    <string name="cb_retry_otp">retryOTP</string>
+    <string name="cb_skip_screen">skipScreen</string>
+    <string name="cb_sms_otp">SMS OTP</string>
+    <string name="cb_top_arrow">CB arrow</string>
+    <string name="cb_use_sms_otp">USE SMS OTP</string>
+    <string name="cb_waiting_for_otp">Waiting for OTP</string>
+    <string name="ccr_terms_and_conditions_common">"
+One day means a one calendar day(from midnight 12 to midnight 12 ).
+Toll taxes, parkings, state taxes paid by customer wherever is applicable.
+Distance will be calculated from garage to garage.
+
+The final cab rental amount will attract applicable service tax."</string>
+    <string name="ccr_terms_and_conditions_intercity_line1">Approx Distance:</string>
+    <string name="ccr_terms_and_conditions_intercity_line2">"
+ 
+If you use the cab for more than"</string>
+    <string name="ccr_terms_and_conditions_intercity_line3">",
+extra charges as follows:
+After"</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <item type="string" name="circle_radius_multiplier">0.82</item>
+    <item type="string" name="circle_radius_multiplier_24HourMode">0.85</item>
+    <string name="click_here">Click here</string>
+    <string name="com.appsee.apikey">69b4776b61c04af6ad64e0c2e006de9f</string>
+    <string name="com.crashlytics.android.build_id">aa15237f-d89b-40cd-841e-9718cfc7aa8c</string>
+    <string name="db_name">ScootDB</string>
+    <string name="dgts__country_spinner_format">%1$s +%2$d</string>
+    <string name="dgts__digits_com_settings_url">https://www.digits.com/settings</string>
+    <string name="dgts__digits_com_url">https://www.digits.com</string>
+    <string name="dgts__twitter_cookies_policy_url">https://support.twitter.com/articles/20170514</string>
+    <string name="dgts__twitter_privacy_url">https://twitter.com/privacy</string>
+    <string name="dgts__twitter_tos_url">https://twitter.com/tos</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="facebook_app_id">740246329442393</string>
+    <string name="feedback_label1">Your ride with booking reference number:</string>
+    <string name="feedback_mail_subject">Feedback for Scoot</string>
+    <string name="feedback_reason1">Driver was late</string>
+    <string name="feedback_reason2">Rash Driving</string>
+    <string name="feedback_reason3">Too many calls</string>
+    <string name="feedback_reason4">Improper behaviour</string>
+    <string name="feedback_reason5">Other</string>
+    <string name="forgot_password">* Forgot Your Password? Click on Forgot Password to instantly generate a new one.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="if_cvv_and_expiry_on_card"> if you have CVV and Expiry on your card</string>
+    <string name="if_dont_cvv_and_expiry_on_card">" if you don't have CVV and Expiry on your card"</string>
+    <string name="intercity_cab_providers">ccr,makson,roder,one way cabs</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="kit_name">Twitter</string>
+    <string name="label_rate_ride_text">Your ride is complete!</string>
+    <string name="label_rate_ride_text2">How would you rate your last ride?</string>
+    <string name="makson_terms_and_conditions_intercity_line1">Approx Distance:</string>
+    <string name="makson_terms_and_conditions_intercity_line2">"
+If you use the cab for more than"</string>
+    <string name="makson_terms_and_conditions_local_full_day">"Minimum Charged hour/distance per day: 8 Hours/80 Kms
+If you use the cab for more than 8 Hours/80 Kms
+extra charges as follows:
+After 8 Hours/80 Kms
+"</string>
+    <string name="makson_terms_and_conditions_local_half_day">"Minimum Charged hour/distance per day: 4 Hours/40 Kms
+If you use the cab for more than 4 Hours/40 Kms
+extra charges as follows:
+After 4 Hours/40 Kms
+"</string>
+    <string name="makson_terms_and_conditions_local_static2">"One day means a one calendar day(from midnight 12 to midnight 12).
+Toll taxes, parking charges, state taxes to be paid by the customer wherever applicable.
+Distance will be calculated from garage to garage.
+ The final cab rental amount will attract applicable service tax."</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="note">Note : You will be navigated to payment gateway.</string>
+    <item type="string" name="numbers_radius_multiplier_inner">0.6</item>
+    <item type="string" name="numbers_radius_multiplier_normal">0.81</item>
+    <item type="string" name="numbers_radius_multiplier_outer">0.83</item>
+    <string name="ok">Ok</string>
+    <string name="ola_feedback_msg">Ride Completed !!</string>
+    <string name="ondemand_cab_providers">olaAuto</string>
+    <string name="oneway_terms_and_conditions">"1. Details will be sent to the customer by Oneway Cabs approximately one hour before the pick up time by SMS and email.
+2. In case of non-receipt of driver and car details the customer needs to contact 08000 247 247 and mention the booking confirmation number.
+3. Any extra charges applicable has to be paid directly in cash to the driver."</string>
+    <string name="pay_now">Pay</string>
+    <string name="payment_policy">Cash payment in full will be made directly to the driver.</string>
+    <string name="payu_base_activity">PayU</string>
+    <string name="permission_location_rationale">Location Permission is needed to show the Cabs nearest to your location.</string>
+    <string name="permissions_call_not_granted">Not able to make call as permission not granted.</string>
+    <string name="permissions_location_not_granted">Not able to get your location as location permission not granted.</string>
+    <string name="place_details">&lt;b>%1$s&lt;/b>&lt;br/>&lt;i>Place Id: %2$s&lt;/i>&lt;br/>Address: %3$s&lt;br/>Phone: %4$s&lt;br/>Website: %5$s</string>
+    <string name="reason1">Driver is late</string>
+    <string name="reason2">Changed my mind</string>
+    <string name="reason3">Booked another cab</string>
+    <string name="reason4">Driver denied duty</string>
+    <string name="reason5">Auto delayed</string>
+    <string name="reason6">Unable to contact driver</string>
+    <string name="roder_cancellation_policy">Cancellation between 0 to 12 hours prior to the start of trip will result in full deduction and no refund. Between 12 to 24 hours half of the amount will be refunded. If cancelled before 24 hours of the start of trip, full amount will be refunded</string>
+    <string name="roder_terms_and_conditions">Information regarding the booking will be sent to you via sms and email. If booking is confirmed, please check the booking details including but not limited to pick up time and pick up place, and if there is any incorrect detail, the same needs to be informed to Roder immediately by calling their phone number 8010440044</string>
+    <item type="string" name="selection_radius_multiplier">0.16</item>
+    <string name="service_not_available">Service Not Available</string>
+    <string name="submit">Submit</string>
+    <string name="terms_and_conditions">"Approx OneWay Distance 150 Kms 
+ 
+If you will use a car more than 1 day and 150 Kms,
+extra charges as follows:
+After 150 Kms and 1 Days(s)
++ ₹ 12.5 per Km
++ ₹ 300 per day driver charges
+
+One day means a one calendar day(from midnight 12 to midnight 12 ).
+Toll taxes, parkings, state taxes paid by customer wherever is applicable.
+
+Distance will be calculated from garage to garage.
+
+The final cab rental amount will attract applicable service tax."</string>
+    <string name="terms_and_conditions_local">"Minimum Charged hour/distance per day: 8 Hours/80 Kms 
+ 
+If you will use a car more than 8 Hours/80 Kms
+extra charges as follows:
+After 8 Hours/80 Kms
++ ₹ 100 per Hour
++ ₹ 9.75/Km 
+
+One day means a one calendar day(from midnight 12 to midnight 12 ).
+Toll taxes, parkings, state taxes paid by customer wherever is applicable.
+
+Distance will be calculated from garage to garage.
+
+The final cab rental amount will attract applicable service tax."</string>
+    <item type="string" name="text_size_multiplier_inner">0.14</item>
+    <item type="string" name="text_size_multiplier_normal">0.17</item>
+    <item type="string" name="text_size_multiplier_outer">0.11</item>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_booking_confirmation">BookingConfirmation</string>
+    <string name="title_activity_car_rental_cab_listings">CarRentalCabListings</string>
+    <string name="title_activity_car_rental_cabs_listing_local">CarRentalCabsListingLocal</string>
+    <string name="title_activity_car_rental_cities_page">CarRentalCitiesPage</string>
+    <string name="title_activity_car_rental_city_pick">CarRentalCityPick</string>
+    <string name="title_activity_car_rental_city_prompt">CarRentalCityPrompt</string>
+    <string name="title_activity_car_rental_confirm_booking">CarRentalConfirmBooking</string>
+    <string name="title_activity_car_rental_confirm_booking_local">CarRentalConfirmBookingLocal</string>
+    <string name="title_activity_car_rental_pre_payment_page">CarRentalPrePaymentPage</string>
+    <string name="title_activity_card">CardActivity</string>
+    <string name="title_activity_cash_card">CashCardActivity</string>
+    <string name="title_activity_emi">EmiActivity</string>
+    <string name="title_activity_facebook_signup">FacebookSignup</string>
+    <string name="title_activity_local_car_rental_pre_payment_page">LocalCarRentalPrePaymentPage</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_makson_confirm_booking_page_intercity">MaksonConfirmBookingPageIntercity</string>
+    <string name="title_activity_merchant_payment">MerchantPaymentActivity</string>
+    <string name="title_activity_mobile_verification">MobileVerification</string>
+    <string name="title_activity_modify_user_details">ModifyUserDetails</string>
+    <string name="title_activity_net_banking">NetBankingActivity</string>
+    <string name="title_activity_new_user_screen">NewUserScreen</string>
+    <string name="title_activity_offers">Offers</string>
+    <string name="title_activity_ola_booking">OlaBooking</string>
+    <string name="title_activity_ola_signup">OlaSignup</string>
+    <string name="title_activity_on_demand_search_address">OnDemandSearchAddress</string>
+    <string name="title_activity_one_way_cabs_confirm_booking_page_intercity">OneWayCabsConfirmBookingPageIntercity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="title_activity_signup_page">SignupPage</string>
+    <string name="title_activity_user_cards">UserCardsActivity</string>
+    <string name="title_activity_verify_api">VerifyApiActivity</string>
+</resources>

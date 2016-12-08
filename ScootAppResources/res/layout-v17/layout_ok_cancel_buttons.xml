@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ok_cancel_buttons_layout" android:background="@android:color/transparent" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/picker_cancel" android:layout_marginEnd="8.0dip" style="@style/bp_ActionButton.Text" />
+    <Button android:id="@id/done_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/picker_set" android:layout_marginEnd="16.0dip" style="@style/bp_ActionButton.Text" />
+</LinearLayout>

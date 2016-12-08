@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_below="@id/app_bar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.7">
+            <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textStyle="bold" android:id="@id/text_view_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rs." />
+            <TextView android:id="@id/text_view_transaction_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transaction id : " />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+            <ListView android:id="@id/list_view_cash_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/footer_image" />
+</RelativeLayout>

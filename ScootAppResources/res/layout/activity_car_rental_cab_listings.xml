@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/tool_bar" layout="@layout/toolbar_details" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/car_listings_refresher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/search_tool_container" android:layout_below="@id/view" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView android:id="@id/car_listings" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout android:id="@id/search_tool_container" android:background="@color/advance_search_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/sort_price" android:paddingLeft="5.0dip" android:paddingTop="@dimen/filter_padding" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/sortPriceBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort By" android:layout_alignParentTop="true" />
+            <RelativeLayout android:orientation="horizontal" android:paddingBottom="@dimen/filter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sortPriceBy" android:layout_alignLeft="@id/sortPriceBy">
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/sortPriceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/sortPriceIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toRightOf="@id/sortPriceText" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/white_transp" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_box_divider_height" android:layout_marginBottom="@dimen/search_box_divider_height" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/sort_time" android:paddingLeft="5.0dip" android:paddingTop="@dimen/filter_padding" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/sortTimeBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort By" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/sortTimeText" android:paddingBottom="@dimen/filter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Closest Cab" android:layout_below="@id/sortTimeBy" android:layout_alignLeft="@id/sortTimeBy" />
+        </RelativeLayout>
+        <View android:background="@color/white_transp" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_box_divider_height" android:layout_marginBottom="@dimen/search_box_divider_height" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/filter_capacity" android:paddingLeft="5.0dip" android:paddingTop="@dimen/filter_padding" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/filterCapacityBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filter By" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/filterCapacityText" android:paddingBottom="@dimen/filter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seating Capacity" android:layout_below="@id/filterCapacityBy" android:layout_alignLeft="@id/filterCapacityBy" />
+        </RelativeLayout>
+        <View android:background="@color/white_transp" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_box_divider_height" android:layout_marginBottom="@dimen/search_box_divider_height" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/filter_company" android:paddingLeft="5.0dip" android:paddingTop="@dimen/filter_padding" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/filterCompanyBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filter By" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/filterCompanyText" android:paddingBottom="@dimen/filter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Company" android:layout_below="@id/filterCompanyBy" android:layout_alignLeft="@id/filterCompanyBy" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/filter_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_above="@id/search_tool_container" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/fabButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_check" android:layout_above="@id/search_tool_container" android:layout_alignParentRight="true" app:borderWidth="0.0dip" app:backgroundTint="@color/gradient_end" />
+</RelativeLayout>

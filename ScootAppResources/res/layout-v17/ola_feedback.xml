@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_bar" layout="@layout/tool_bar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_section_feedback" android:layout_width="fill_parent" android:layout_height="100.0dip" android:weightSum="1.0" android:layout_below="@id/top_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/time_stamp_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.05">
+            <android.support.v7.widget.AppCompatTextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/time_stamp" android:layout_width="196.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="29 February 2016, 12:30 PM" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/cost_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <ImageView android:background="@drawable/ic_rupee_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="44.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/ride_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 200" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/feedback_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:divider="@drawable/horizontal_divider" android:layout_below="@id/top_section_feedback" android:layout_alignParentLeft="true" android:showDividers="end" android:layout_alignParentStart="true">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/label_rate_ride" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_rate_ride_text" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/label_rate_ride2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_rate_ride_text2" />
+        <RatingBar android:layout_gravity="center_horizontal" android:id="@id/ride_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:progressDrawable="@drawable/star_selector" android:numStars="5" android:rating="0.0" android:stepSize="1.0" android:isIndicator="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/good_ride_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/ic_good_ride" android:layout_below="@id/feedback_container" android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.AppCompatEditText android:textSize="18.0sp" android:id="@id/comment_box_good_ride" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:hint="Additional Comments" android:layout_below="@id/good_ride_logo" />
+    <ScrollView android:id="@id/reasons_scroller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_above="@id/submit_feedback" android:layout_below="@id/feedback_container">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/driver_late_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <RadioButton android:id="@id/reason1_rb" android:tag="@string/feedback_reason1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:id="@id/reason1_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/feedback_reason1" android:layout_weight="0.66" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/rash_driving_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:layout_below="@id/driver_late_container" android:showDividers="end">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <RadioButton android:id="@id/reason2_rb" android:tag="@string/feedback_reason2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:id="@id/reason2_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/feedback_reason2" android:layout_weight="0.66" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/many_calls_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:layout_below="@id/rash_driving_container" android:showDividers="end">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <RadioButton android:id="@id/reason3_rb" android:tag="@string/feedback_reason3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:id="@id/reason3_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/feedback_reason3" android:layout_weight="0.66" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/behaviour_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:layout_below="@id/many_calls_container" android:showDividers="end">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <RadioButton android:id="@id/reason4_rb" android:tag="@string/feedback_reason4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:id="@id/reason4_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/feedback_reason4" android:layout_weight="0.66" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/other_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/behaviour_container">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <RadioButton android:id="@id/reason5_rb" android:tag="@string/feedback_reason5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:id="@id/reason5_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/feedback_reason5" android:layout_weight="0.66" />
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatEditText android:id="@id/comment_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:hint="Additional Comments" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/submit_feedback" android:background="@drawable/submit_button_disabled" android:clickable="false" android:layout_width="283.0dip" android:layout_height="wrap_content" android:text="Send" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

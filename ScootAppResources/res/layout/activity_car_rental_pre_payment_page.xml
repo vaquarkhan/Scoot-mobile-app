@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_bar" layout="@layout/tool_bar" />
+    <RelativeLayout android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/pay_now" android:layout_below="@id/top_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/address_container">
+            <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:id="@id/first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="First Name" android:layout_weight="0.5" />
+                <android.support.v7.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:id="@id/last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Last Name" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/email_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/name_container">
+            <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/email_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Email" />
+            <android.support.v7.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Your Email" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/phone_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/email_container">
+            <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/phone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Phone" />
+            <android.support.v7.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:id="@id/phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Phone Number" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/coupon_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/phone_container">
+            <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/coupon_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Coupon code" />
+            <android.support.v7.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:id="@id/coupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Coupon Code" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/address_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/pickup_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Pick Up Address" />
+            <android.support.v7.widget.AppCompatAutoCompleteTextView android:textColor="@color/black" android:textColorHint="#ffb4b4b4" android:ellipsize="end" android:id="@id/address_line1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Your Address" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scrollView" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/coupon_container">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/cancellation_policy_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffb4b4b4" android:id="@id/cancellation_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancellation Policy:" />
+                    <android.support.v7.widget.AppCompatTextView android:id="@id/cancellation_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancellation_policy" />
+                </LinearLayout>
+                <CheckBox android:id="@id/accept_cancellation_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:checked="true" android:text="I accept the above listed cancellation policy." android:layout_below="@id/cancellation_policy_container" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/pay_now" android:background="@color/floating_label_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pay Now" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+</RelativeLayout>

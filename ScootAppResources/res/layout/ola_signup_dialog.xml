@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/olaSignupWebView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/forgot_password" android:gravity="center_horizontal" android:id="@id/forgotPassword" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/forgot_password" android:layout_below="@id/olaSignupWebView" />
+</RelativeLayout>

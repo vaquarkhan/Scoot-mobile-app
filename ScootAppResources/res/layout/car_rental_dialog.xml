@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/car_rental_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="How many cars you want to book?" />
+    <android.support.v7.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@id/car_rental_dialog_cars" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="1" android:selectAllOnFocus="true" android:maxLength="1" android:inputType="number" />
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/btn_ok" android:background="@color/app_blue" android:clickable="true" android:layout_width="384.0dip" android:layout_height="40.0dip" android:text="OK" />
+</LinearLayout>

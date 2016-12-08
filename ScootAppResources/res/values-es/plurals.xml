@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="other">dentro de %d días</item>
+        <item quantity="one">mañana</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="other">dentro de %d horas</item>
+        <item quantity="one">dentro de 1 hora</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="other">hace %d días</item>
+        <item quantity="one">Ayer</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="other">hace %d horas</item>
+        <item quantity="one">hace 1 hora</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="other">hace %d minutos</item>
+        <item quantity="one">hace 1 minuto</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="other">hace %d segundos</item>
+        <item quantity="one">hace 1 segundo</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">1 hora</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="other">%d segundos</item>
+        <item quantity="one">1 segundo</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="other">dentro de %d días</item>
+        <item quantity="one">mañana</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="other">dentro de %d horas</item>
+        <item quantity="one">dentro de 1 hora</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="other">Hace %d días</item>
+        <item quantity="one">Ayer</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="other">Hace %d horas</item>
+        <item quantity="one">Hace 1 hora</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="other">Hace %d minutos</item>
+        <item quantity="one">Hace 1 minuto</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="other">Hace %d segundos</item>
+        <item quantity="one">Hace 1 segundo</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">Cada %d días</item>
+        <item quantity="one">Diario</item>
+    </plurals>
+    <plurals name="endByCount">
+        <item quantity="other">; %d veces</item>
+        <item quantity="one">; una vez</item>
+    </plurals>
+    <plurals name="recurrence_end_count">
+        <item quantity="other">Por %d veces</item>
+        <item quantity="one">Por %d veces</item>
+    </plurals>
+    <plurals name="recurrence_interval_daily">
+        <item quantity="other">Cada %d días</item>
+        <item quantity="one">Cada %d día</item>
+    </plurals>
+    <plurals name="recurrence_interval_monthly">
+        <item quantity="other">Cada %d meses</item>
+        <item quantity="one">Cada %d mes</item>
+    </plurals>
+    <plurals name="recurrence_interval_weekly">
+        <item quantity="other">Cada %d semanas</item>
+        <item quantity="one">Cada %d semana</item>
+    </plurals>
+    <plurals name="recurrence_interval_yearly">
+        <item quantity="other">Cada %d años</item>
+        <item quantity="one">Cada %d año</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">Cada %1$d semanas los %2$s</item>
+        <item quantity="one">Semanal los %2$s</item>
+    </plurals>
+</resources>

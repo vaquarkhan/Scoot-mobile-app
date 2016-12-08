@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_bar" layout="@layout/tool_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/top_bar">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/trip_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Trip Details" />
+                <RelativeLayout android:id="@id/rlTopBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip">
+                    <ImageView android:id="@id/sourceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_pickup" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="18.0sp" android:textColor="@color/location_text" android:textColorHint="@color/grey" android:ellipsize="end" android:id="@id/etv_places" android:paddingBottom="15.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Where From?" android:maxLines="1" android:lines="1" android:ems="10" android:singleLine="true" android:selectAllOnFocus="true" android:layout_toRightOf="@id/sourceLabel" android:layout_alignTop="@id/sourceLabel" android:imeOptions="actionNext" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="18.0sp" android:textColor="@color/location_text" android:textColorHint="@color/grey" android:ellipsize="end" android:id="@id/etv_dest" android:paddingBottom="15.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Where To?" android:maxLines="1" android:lines="1" android:ems="10" android:singleLine="true" android:selectAllOnFocus="true" android:layout_below="@id/etv_places" android:layout_alignLeft="@id/etv_places" android:imeOptions="actionNext" />
+                    <ImageView android:id="@id/destLabel" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_destination" android:layout_toLeftOf="@id/etv_dest" android:layout_alignTop="@id/etv_dest" />
+                    <ImageView android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pickup_line" android:scaleType="fitXY" android:layout_alignLeft="@id/sourceLabel" android:layout_alignTop="@id/sourceLabel" android:layout_alignBottom="@id/destLabel" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/date_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                    <ImageView android:id="@id/date_imageView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_action_event_blue" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/pickup_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                        <android.support.v7.widget.AppCompatTextView android:textColor="@color/floating_label_blue" android:id="@id/pick_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Depart" />
+                        <android.support.v7.widget.AppCompatTextView android:id="@id/pickup_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Pick a Date" android:singleLine="true" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/alarm_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/ic_action_alarm_blue" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/return_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/pick_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pick Up Time" />
+                        <android.support.v7.widget.AppCompatTextView android:id="@id/pickup_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Pickup Time" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/cab_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:layout_below="@id/trip_details_container" android:showDividers="end">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="Cab Details" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/trip_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:id="@id/trip_cost_container" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/trip_cost_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trip Cost" />
+                        <TextView android:ellipsize="end" android:id="@id/trip_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Rs. 18000" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/trip_distance_container" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/trip_distance_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distance" />
+                        <TextView android:ellipsize="end" android:id="@id/trip_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="340 kms" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/trip_seats_container" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/trip_seats_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seats" />
+                        <TextView android:ellipsize="end" android:id="@id/trip_seats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="340 kms" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:id="@id/company_name_container" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/company_name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Company" />
+                        <TextView android:ellipsize="end" android:id="@id/company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Company" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/car_name_container" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/car_name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Car Name" />
+                        <TextView android:ellipsize="end" android:id="@id/car_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Car Name" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/num_cars_conatiner" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.33">
+                        <TextView android:textColor="@color/floating_label_blue" android:id="@id/num_cars_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cars Booked" />
+                        <TextView android:id="@id/num_cars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Cars" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:id="@id/terms_conditions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="Terms and Conditions:" android:layout_below="@id/cab_details_container" />
+            <TextView android:id="@id/tnc_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="@string/terms_and_conditions" android:layout_below="@id/terms_conditions" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/confirm_booking" android:background="@color/floating_label_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirm Booking" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+</RelativeLayout>

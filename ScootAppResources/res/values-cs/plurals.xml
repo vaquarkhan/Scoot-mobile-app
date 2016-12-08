@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="other">za %d dny</item>
+        <item quantity="one">zítra</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="other">za %d hod.</item>
+        <item quantity="one">za 1 hodinu</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="other">za %d min</item>
+        <item quantity="one">za 1 min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="other">za %d s</item>
+        <item quantity="one">za 1 s</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="other">před %d dny</item>
+        <item quantity="one">včera</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="other">před %d h</item>
+        <item quantity="one">před 1 h</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="other">před %d min</item>
+        <item quantity="one">před 1 min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="other">před %d s</item>
+        <item quantity="one">před 1 s</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">1 hodina</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 minuta</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="other">%d s</item>
+        <item quantity="one">1 sekunda</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="other">za %d dny</item>
+        <item quantity="one">zítra</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="other">za %d hod.</item>
+        <item quantity="one">za 1 hodinu</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="other">za %d min</item>
+        <item quantity="one">za 1 minutu</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="other">za %d s</item>
+        <item quantity="one">za 1 sekundu</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="other">před %d dny</item>
+        <item quantity="one">včera</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="other">před %d h</item>
+        <item quantity="one">před 1 h</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="other">před %d min</item>
+        <item quantity="one">před 1 min</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="other">před %d s</item>
+        <item quantity="one">před 1 sekundou</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">Každých %d dnů</item>
+        <item quantity="one">Denně</item>
+        <item quantity="few">Každé %d dny</item>
+    </plurals>
+    <plurals name="endByCount">
+        <item quantity="other">; %d krát</item>
+        <item quantity="one">; jednou</item>
+        <item quantity="few">; %d krát</item>
+    </plurals>
+    <plurals name="recurrence_end_count">
+        <item quantity="other">Opakovat %d událostí</item>
+        <item quantity="one">Opakovat %d událost</item>
+        <item quantity="few">Opakovat %d události</item>
+    </plurals>
+    <plurals name="recurrence_interval_daily">
+        <item quantity="other">Každý %d. den</item>
+        <item quantity="one">Každý den</item>
+        <item quantity="few">Každý %d. den</item>
+    </plurals>
+    <plurals name="recurrence_interval_monthly">
+        <item quantity="other">Každý %d. měsíc</item>
+        <item quantity="one">Každý měsíc</item>
+        <item quantity="few">Každý %d. měsíc</item>
+    </plurals>
+    <plurals name="recurrence_interval_weekly">
+        <item quantity="other">Každý %d. týden</item>
+        <item quantity="one">Každý týden</item>
+        <item quantity="few">Každý %d. týden</item>
+    </plurals>
+    <plurals name="recurrence_interval_yearly">
+        <item quantity="other">Každý %d. rok</item>
+        <item quantity="one">Každý rok</item>
+        <item quantity="few">Každý %d. rok</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">Každé %1$d týdny v %2$s</item>
+        <item quantity="one">Týdně %2$s</item>
+        <item quantity="few">Každé %2$s týdny v %2$s</item>
+    </plurals>
+</resources>

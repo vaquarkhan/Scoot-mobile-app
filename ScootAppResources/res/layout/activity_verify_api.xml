@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/button_store_user_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Store User Card" />
+        <Button android:id="@id/button_get_user_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get User Cards" />
+        <Button android:id="@id/button_delete_user_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Delete User Card" />
+        <Button android:id="@id/button_edit_user_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Edit User Card" />
+        <Button android:id="@id/button_get_card_information" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get card Information" />
+        <Button android:id="@id/button_get_ibibo_codes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get IBIBO Codes" />
+        <Button android:id="@id/button_get_value_added_services" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get Value added services" />
+        <Button android:enabled="false" android:id="@id/button_get_transaction_information" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get transaction information" />
+        <Button android:id="@id/button_get_offer_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Get offer status" />
+        <Button android:id="@id/button_verify_transaction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Verify Transaction" />
+    </LinearLayout>
+</ScrollView>

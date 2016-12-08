@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/login_bg_full" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scootlogosignup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/side_menu_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/signup_button_strip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@id/welcomelabel" android:layout_centerHorizontal="true">
+        <Button android:textColor="@color/white" android:id="@id/button_signup" android:background="@drawable/button_rounded_corners" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="Sign Up" />
+        <Button android:textColor="@color/white" android:id="@id/button_login" android:background="@drawable/button_rounded_corners" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Login" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/signup_footer1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/white" android:id="@id/label_create_account_later" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create an Account Later?" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/skip_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  Skip" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/signup_welcome_label" android:id="@id/welcomelabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="Welcome to Scoot!" android:layout_below="@id/scootlogosignup" android:layout_centerHorizontal="true" />
+</RelativeLayout>

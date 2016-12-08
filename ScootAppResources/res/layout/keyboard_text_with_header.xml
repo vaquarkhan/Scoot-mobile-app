@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/medium_light_header" />
+    <include android:id="@id/first" layout="@layout/three_keys_view_text" />
+    <include android:id="@id/second" layout="@layout/three_keys_view_text" />
+    <include android:id="@id/third" layout="@layout/three_keys_view_text" />
+    <include android:id="@id/fourth" layout="@layout/three_keys_view_text" />
+</LinearLayout>

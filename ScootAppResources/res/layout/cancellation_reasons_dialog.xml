@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:text="@string/cancellation_reason_title" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <RadioGroup android:orientation="vertical" android:id="@id/cancel_reasons_rg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/reason1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                <TextView android:id="@id/reason1_text" android:layout_width="175.0dip" android:layout_height="wrap_content" android:text="@string/reason1" android:layout_weight="0.66" />
+                <RadioButton android:id="@id/reason1_rb" android:tag="@string/reason1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/reason2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:weightSum="1.0">
+                <TextView android:id="@id/reason2_text" android:layout_width="175.0dip" android:layout_height="wrap_content" android:text="@string/reason2" android:layout_weight="0.66" />
+                <RadioButton android:id="@id/reason2_rb" android:tag="@string/reason2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/reason3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:weightSum="1.0">
+                <TextView android:id="@id/reason3_text" android:layout_width="175.0dip" android:layout_height="wrap_content" android:text="@string/reason3" android:layout_weight="0.66" />
+                <RadioButton android:id="@id/reason3_rb" android:tag="@string/reason3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/reason4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:weightSum="1.0">
+                <TextView android:id="@id/reason4_text" android:layout_width="175.0dip" android:layout_height="wrap_content" android:text="@string/reason4" android:layout_weight="0.66" />
+                <RadioButton android:id="@id/reason4_rb" android:tag="@string/reason4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/back" android:background="@color/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/back" android:layout_weight="0.5" />
+        <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/submit" android:background="@drawable/submit_button_disabled" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

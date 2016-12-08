@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/crn_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:baselineAligned="false" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/grey" android:id="@id/label_crn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CRN :" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/text_black" android:id="@id/value_crn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 123456789" android:layout_below="@id/label_crn" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/grey" android:id="@id/label_dist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distance :" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/text_black" android:id="@id/value_dist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="94 kms" android:layout_below="@id/label_dist" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/amt_surge_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:baselineAligned="false" android:layout_below="@id/crn_value_container" android:layout_marginStart="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/grey" android:id="@id/label_amt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount :" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/text_black" android:id="@id/value_amt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rs. 100" android:layout_below="@id/label_amt" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/grey" android:id="@id/label_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Surcharge :" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/booking_history_text_size" android:textColor="@color/text_black" android:id="@id/value_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A" android:layout_below="@id/label_surcharge" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

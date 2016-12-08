@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/DrawerLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <RelativeLayout android:id="@id/rlNoOffers" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/offer_recycler_view">
+                <TextView android:textSize="19.0sp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Offers Available" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ProgressBar android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminateDrawable="@drawable/progress_loading_scoot" android:layout_alignParentTop="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/offer_recycler_view" android:paddingLeft="@dimen/offer_card_margin" android:paddingTop="5.0dip" android:paddingRight="0.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout android:layout_gravity="start" android:id="@id/left_drawer" android:fitsSystemWindows="true" android:layout_width="320.0dip" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="start" android:id="@id/recyclerView" android:background="@color/white" android:scrollbars="vertical" android:layout_width="320.0dip" android:layout_height="fill_parent" android:layout_above="@id/feature_menu_container" />
+        <RelativeLayout android:id="@id/logo_container" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="50.0dip" android:layout_height="0.0dip" android:layout_alignTop="@id/feature_menu_container" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/side_menu_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/side_menu_logo" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/feature_menu_container" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_toRightOf="@id/logo_container" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rate_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_rate" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rate" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feedback_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_review" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feedback" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_share" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
